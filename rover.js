@@ -105,3 +105,4 @@ goForward(myRover);
 goRight(myRover);
 goForward(myRover);
 goLeft(myRover);
+goLeft(myRover);
