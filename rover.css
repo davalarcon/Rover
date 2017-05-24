@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(244,248,249);
+    font-family: Helvetica;
+}
+
+#console{
+  width: 100px;
+  padding: 40px 20px 40px 40px;
+  float:left;
+}

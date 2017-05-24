@@ -78,208 +78,29 @@ function goBackwards(rover) {
   console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]");
 }
 
-var commands = "fffrfflffbb";
+var commands = "ffrffffllllllfffffff";
+var counter =0;
 
-switch (commands[0]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
+// while (counter < commands.length){
+while (counter <= commands.length -1){
+  console.log(counter);
+
+  switch (commands[counter]) {
+    case "f":
+      console.log(goForward(myRover));
+      break;
+    case "b":
+      console.log(goBackwards(myRover));
+      break;
     case "r":
       console.log(turnRight(myRover));
       break;
     case "l":
       console.log(turnLeft(myRover));
       break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
+    default:
+      console.log("don't understand which direction you want to go");
+  }
 
-switch (commands[1]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[2]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[3]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[4]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[5]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[6]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[7]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[8]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[9]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[10]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
-}
-
-switch (commands[11]) {
-  case "f":
-    console.log(goForward(myRover));
-    break;
-  case "b":
-    console.log(goBackwards(myRover));
-    break;
-    case "r":
-      console.log(turnRight(myRover));
-      break;
-    case "l":
-      console.log(turnLeft(myRover));
-      break;
-  default:
-    console.log("don't understand which direction you want to go");
+  counter += 1;
 }
