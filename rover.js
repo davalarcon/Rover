@@ -78,29 +78,34 @@ function goBackwards(rover) {
   console.log("New Rover Position: [" + rover.position[0] + ", " + rover.position[1] + "]");
 }
 
-var commands = "ffrffffllllllfffffff";
-var counter =0;
+function outPutDirection(){
+  var x = document.getElementById("commandInput");
 
-// while (counter < commands.length){
-while (counter <= commands.length -1){
-  console.log(counter);
+  var commands = x.value;
+  var counter =0;
 
-  switch (commands[counter]) {
-    case "f":
+console.log(commands);
+
+  while (counter <= commands.length -1){
+    console.log(counter);
+
+    switch (commands[counter]) {
+      case "f":
       console.log(goForward(myRover));
       break;
-    case "b":
+      case "b":
       console.log(goBackwards(myRover));
       break;
-    case "r":
+      case "r":
       console.log(turnRight(myRover));
       break;
-    case "l":
+      case "l":
       console.log(turnLeft(myRover));
       break;
-    default:
+      default:
       console.log("don't understand which direction you want to go");
-  }
+    }
 
-  counter += 1;
+    counter += 1;
+  }
 }

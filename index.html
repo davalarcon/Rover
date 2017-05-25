@@ -2,19 +2,19 @@
 <head>
 	<title>Mars Rover Kata!</title>
 	<script type="text/javascript" src="rover.js"></script>
+  <link rel="stylesheet" href="rover.css">
 </head>
 <body>
-  var myMaze=[
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,1,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,1,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  [0,0,0,0,0,0,0,0,0,0],
-  ]
+<div id="commands">
+  <form>
+    Directions Input (f=forward, b=backwards, r=turn right, l=turn left): <input id="commandInput" name="commands" type="text" size="20">
+  </form>
+  <button onclick="outPutDirection()">Submit </button>
+</div>
+
+<div id="console">
+  <img src="roverimage.jpg" height="550"/>
+<div/>
+
 </body>
-</html>3
+</html>
